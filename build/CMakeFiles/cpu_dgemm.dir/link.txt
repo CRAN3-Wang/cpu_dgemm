@@ -1,0 +1,1 @@
+clang -g CMakeFiles/cpu_dgemm.dir/src/main.c.o CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o CMakeFiles/cpu_dgemm.dir/src/utils.c.o CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o -o cpu_dgemm  /usr/lib/x86_64-linux-gnu/libblas.so 
