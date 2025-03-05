@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/crane/dev/cpu_dgemm/include
 
-C_FLAGS = -g
+C_FLAGS =  -mavx2 -mfma -g
 

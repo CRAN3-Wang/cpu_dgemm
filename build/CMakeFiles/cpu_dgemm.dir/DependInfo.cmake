@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/crane/dev/cpu_dgemm/src/kernel_int_8x4.c" "CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o" "gcc" "CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o.d"
+  "/home/crane/dev/cpu_dgemm/src/kernels.c" "CMakeFiles/cpu_dgemm.dir/src/kernels.c.o" "gcc" "CMakeFiles/cpu_dgemm.dir/src/kernels.c.o.d"
   "/home/crane/dev/cpu_dgemm/src/main.c" "CMakeFiles/cpu_dgemm.dir/src/main.c.o" "gcc" "CMakeFiles/cpu_dgemm.dir/src/main.c.o.d"
   "/home/crane/dev/cpu_dgemm/src/my_dgemm.c" "CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o" "gcc" "CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o.d"
   "/home/crane/dev/cpu_dgemm/src/utils.c" "CMakeFiles/cpu_dgemm.dir/src/utils.c.o" "gcc" "CMakeFiles/cpu_dgemm.dir/src/utils.c.o.d"

@@ -111,26 +111,26 @@ CMakeFiles/cpu_dgemm.dir/src/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cpu_dgemm.dir/src/utils.c.s"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/crane/dev/cpu_dgemm/src/utils.c -o CMakeFiles/cpu_dgemm.dir/src/utils.c.s
 
-CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o: CMakeFiles/cpu_dgemm.dir/flags.make
-CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o: /home/crane/dev/cpu_dgemm/src/kernel_int_8x4.c
-CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o: CMakeFiles/cpu_dgemm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crane/dev/cpu_dgemm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o -MF CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o.d -o CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o -c /home/crane/dev/cpu_dgemm/src/kernel_int_8x4.c
+CMakeFiles/cpu_dgemm.dir/src/kernels.c.o: CMakeFiles/cpu_dgemm.dir/flags.make
+CMakeFiles/cpu_dgemm.dir/src/kernels.c.o: /home/crane/dev/cpu_dgemm/src/kernels.c
+CMakeFiles/cpu_dgemm.dir/src/kernels.c.o: CMakeFiles/cpu_dgemm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/crane/dev/cpu_dgemm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cpu_dgemm.dir/src/kernels.c.o"
+	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cpu_dgemm.dir/src/kernels.c.o -MF CMakeFiles/cpu_dgemm.dir/src/kernels.c.o.d -o CMakeFiles/cpu_dgemm.dir/src/kernels.c.o -c /home/crane/dev/cpu_dgemm/src/kernels.c
 
-CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.i"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/crane/dev/cpu_dgemm/src/kernel_int_8x4.c > CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.i
+CMakeFiles/cpu_dgemm.dir/src/kernels.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cpu_dgemm.dir/src/kernels.c.i"
+	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/crane/dev/cpu_dgemm/src/kernels.c > CMakeFiles/cpu_dgemm.dir/src/kernels.c.i
 
-CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.s"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/crane/dev/cpu_dgemm/src/kernel_int_8x4.c -o CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.s
+CMakeFiles/cpu_dgemm.dir/src/kernels.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cpu_dgemm.dir/src/kernels.c.s"
+	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/crane/dev/cpu_dgemm/src/kernels.c -o CMakeFiles/cpu_dgemm.dir/src/kernels.c.s
 
 # Object files for target cpu_dgemm
 cpu_dgemm_OBJECTS = \
 "CMakeFiles/cpu_dgemm.dir/src/main.c.o" \
 "CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o" \
 "CMakeFiles/cpu_dgemm.dir/src/utils.c.o" \
-"CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o"
+"CMakeFiles/cpu_dgemm.dir/src/kernels.c.o"
 
 # External object files for target cpu_dgemm
 cpu_dgemm_EXTERNAL_OBJECTS =
@@ -138,7 +138,7 @@ cpu_dgemm_EXTERNAL_OBJECTS =
 cpu_dgemm: CMakeFiles/cpu_dgemm.dir/src/main.c.o
 cpu_dgemm: CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o
 cpu_dgemm: CMakeFiles/cpu_dgemm.dir/src/utils.c.o
-cpu_dgemm: CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o
+cpu_dgemm: CMakeFiles/cpu_dgemm.dir/src/kernels.c.o
 cpu_dgemm: CMakeFiles/cpu_dgemm.dir/build.make
 cpu_dgemm: /usr/lib/x86_64-linux-gnu/libblas.so
 cpu_dgemm: CMakeFiles/cpu_dgemm.dir/link.txt

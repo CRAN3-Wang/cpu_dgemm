@@ -1,26 +1,26 @@
 [
 {
   "directory": "/home/crane/dev/cpu_dgemm/build",
-  "command": "clang  -I/home/crane/dev/cpu_dgemm/include -g -o CMakeFiles/cpu_dgemm.dir/src/main.c.o -c /home/crane/dev/cpu_dgemm/src/main.c",
+  "command": "clang  -I/home/crane/dev/cpu_dgemm/include  -mavx2 -mfma -g -o CMakeFiles/cpu_dgemm.dir/src/main.c.o -c /home/crane/dev/cpu_dgemm/src/main.c",
   "file": "/home/crane/dev/cpu_dgemm/src/main.c",
   "output": "CMakeFiles/cpu_dgemm.dir/src/main.c.o"
 },
 {
   "directory": "/home/crane/dev/cpu_dgemm/build",
-  "command": "clang  -I/home/crane/dev/cpu_dgemm/include -g -o CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o -c /home/crane/dev/cpu_dgemm/src/my_dgemm.c",
+  "command": "clang  -I/home/crane/dev/cpu_dgemm/include  -mavx2 -mfma -g -o CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o -c /home/crane/dev/cpu_dgemm/src/my_dgemm.c",
   "file": "/home/crane/dev/cpu_dgemm/src/my_dgemm.c",
   "output": "CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o"
 },
 {
   "directory": "/home/crane/dev/cpu_dgemm/build",
-  "command": "clang  -I/home/crane/dev/cpu_dgemm/include -g -o CMakeFiles/cpu_dgemm.dir/src/utils.c.o -c /home/crane/dev/cpu_dgemm/src/utils.c",
+  "command": "clang  -I/home/crane/dev/cpu_dgemm/include  -mavx2 -mfma -g -o CMakeFiles/cpu_dgemm.dir/src/utils.c.o -c /home/crane/dev/cpu_dgemm/src/utils.c",
   "file": "/home/crane/dev/cpu_dgemm/src/utils.c",
   "output": "CMakeFiles/cpu_dgemm.dir/src/utils.c.o"
 },
 {
   "directory": "/home/crane/dev/cpu_dgemm/build",
-  "command": "clang  -I/home/crane/dev/cpu_dgemm/include -g -o CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o -c /home/crane/dev/cpu_dgemm/src/kernel_int_8x4.c",
-  "file": "/home/crane/dev/cpu_dgemm/src/kernel_int_8x4.c",
-  "output": "CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o"
+  "command": "clang  -I/home/crane/dev/cpu_dgemm/include  -mavx2 -mfma -g -o CMakeFiles/cpu_dgemm.dir/src/kernels.c.o -c /home/crane/dev/cpu_dgemm/src/kernels.c",
+  "file": "/home/crane/dev/cpu_dgemm/src/kernels.c",
+  "output": "CMakeFiles/cpu_dgemm.dir/src/kernels.c.o"
 }
 ]

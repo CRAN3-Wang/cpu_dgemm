@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 #include "config.h"
-#include "utils.h"
 #include "my_dgemm.h"
+#include "utils.h"
 
 #define EPS (0.005)
 
@@ -34,9 +34,9 @@ void check(double *C, double *C_ref, int m, int n) {
 }
 
 int main() {
-    int m = 96;
+    int m = 192;
     int n = 2048;
-    int k = 256;
+    int k = 512;
 
     double *A = (double *)malloc(sizeof(double) * m * k);
     double *B = (double *)malloc(sizeof(double) * k * n);
@@ -62,9 +62,9 @@ int main() {
     my_dgemm(m, n, k, A, lda, B, ldb, C, ldc);
     check(C, C_ref, m, n);
 
-    // free(A);
-    // free(B);
-    // free(C);
-    // free(C_ref);
+    free(A);
+    free(B);
+    free(C);
+    free(C_ref);
     return 0;
 }

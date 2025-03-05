@@ -4,6 +4,7 @@
 
 #include "config.h"
 #include "utils.h"
+#include "kernels.h"
 /**
  * @brief This function will pack A to blocks with shape (m, k), col-majored array and store to
  * packA
@@ -112,6 +113,7 @@ static void macro_kernel(int m, int n, int k, double *packA, double *packB, doub
     for (int j = 0; j < n; j += DGEMM_NR) {
         for (int i = 0; i < m; i += DGEMM_MR) {
             micro_kernel(k, &packA[i * k], &packB[j * k], &C[j * ldc + i], (unsigned long long)ldc);
+            // kernel_8x4(&packA[i * k], &packB[j * k], &C[j * ldc + i], k);
         }
     }
 }

@@ -129,29 +129,29 @@ cpu_dgemm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu_dgemm.dir/build.make CMakeFiles/cpu_dgemm.dir/build
 .PHONY : cpu_dgemm/fast
 
-src/kernel_int_8x4.o: src/kernel_int_8x4.c.o
-.PHONY : src/kernel_int_8x4.o
+src/kernels.o: src/kernels.c.o
+.PHONY : src/kernels.o
 
 # target to build an object file
-src/kernel_int_8x4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu_dgemm.dir/build.make CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o
-.PHONY : src/kernel_int_8x4.c.o
+src/kernels.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu_dgemm.dir/build.make CMakeFiles/cpu_dgemm.dir/src/kernels.c.o
+.PHONY : src/kernels.c.o
 
-src/kernel_int_8x4.i: src/kernel_int_8x4.c.i
-.PHONY : src/kernel_int_8x4.i
+src/kernels.i: src/kernels.c.i
+.PHONY : src/kernels.i
 
 # target to preprocess a source file
-src/kernel_int_8x4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu_dgemm.dir/build.make CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.i
-.PHONY : src/kernel_int_8x4.c.i
+src/kernels.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu_dgemm.dir/build.make CMakeFiles/cpu_dgemm.dir/src/kernels.c.i
+.PHONY : src/kernels.c.i
 
-src/kernel_int_8x4.s: src/kernel_int_8x4.c.s
-.PHONY : src/kernel_int_8x4.s
+src/kernels.s: src/kernels.c.s
+.PHONY : src/kernels.s
 
 # target to generate assembly for a file
-src/kernel_int_8x4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu_dgemm.dir/build.make CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.s
-.PHONY : src/kernel_int_8x4.c.s
+src/kernels.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu_dgemm.dir/build.make CMakeFiles/cpu_dgemm.dir/src/kernels.c.s
+.PHONY : src/kernels.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -234,9 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cpu_dgemm"
-	@echo "... src/kernel_int_8x4.o"
-	@echo "... src/kernel_int_8x4.i"
-	@echo "... src/kernel_int_8x4.s"
+	@echo "... src/kernels.o"
+	@echo "... src/kernels.i"
+	@echo "... src/kernels.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o"
-  "CMakeFiles/cpu_dgemm.dir/src/kernel_int_8x4.c.o.d"
+  "CMakeFiles/cpu_dgemm.dir/src/kernels.c.o"
+  "CMakeFiles/cpu_dgemm.dir/src/kernels.c.o.d"
   "CMakeFiles/cpu_dgemm.dir/src/main.c.o"
   "CMakeFiles/cpu_dgemm.dir/src/main.c.o.d"
   "CMakeFiles/cpu_dgemm.dir/src/my_dgemm.c.o"

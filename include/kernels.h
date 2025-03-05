@@ -1,0 +1,1 @@
+void kernel_8x4(const double* A, const double* B, double* C, int k);

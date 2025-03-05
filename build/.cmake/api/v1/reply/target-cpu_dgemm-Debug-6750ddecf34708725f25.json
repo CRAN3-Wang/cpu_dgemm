@@ -49,7 +49,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : " -mavx2 -mfma -g"
 				}
 			],
 			"includes" : 
@@ -75,7 +75,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-mavx2 -mfma -g",
 				"role" : "flags"
 			},
 			{
@@ -133,7 +133,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/kernel_int_8x4.c",
+			"path" : "src/kernels.c",
 			"sourceGroupIndex" : 0
 		}
 	],
