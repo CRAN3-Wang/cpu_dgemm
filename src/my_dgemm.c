@@ -112,8 +112,9 @@ static void micro_kernel(int k, double *a, double *b, double *c, unsigned long l
 static void macro_kernel(int m, int n, int k, double *packA, double *packB, double *C, int ldc) {
     for (int j = 0; j < n; j += DGEMM_NR) {
         for (int i = 0; i < m; i += DGEMM_MR) {
-            micro_kernel(k, &packA[i * k], &packB[j * k], &C[j * ldc + i], (unsigned long long)ldc);
+            // micro_kernel(k, &packA[i * k], &packB[j * k], &C[j * ldc + i], (unsigned long long)ldc);
             // kernel_8x4(&packA[i * k], &packB[j * k], &C[j * ldc + i], k);
+            kernel_12x4(&packA[i * k], &packB[j * k], &C[j * ldc + i], k);
         }
     }
 }

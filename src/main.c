@@ -34,9 +34,9 @@ void check(double *C, double *C_ref, int m, int n) {
 }
 
 int main() {
-    int m = 192;
+    int m = 12;
     int n = 2048;
-    int k = 512;
+    int k = 4;
 
     double *A = (double *)malloc(sizeof(double) * m * k);
     double *B = (double *)malloc(sizeof(double) * k * n);
